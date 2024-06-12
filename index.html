@@ -2,11 +2,11 @@
 x=0;
 y=0;
 function setCookieAndRedirect() {
-    var x = document.getElementById("x").value;
-    var y = document.getElementById("y").value;
+    var x = document.getElementById("x").innerText;
+    var y = document.getElementById("y").innerText;
     document.cookie = "x=" + x + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     document.cookie = "y=" + y + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
-    window.location.href = "Cart.html?x=" + x + "&y=" + y;
+    window.location.href = "Cart.html";
 }
 </script>
 
